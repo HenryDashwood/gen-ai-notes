@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  search: false
+  sidebar:
+    style: "docked"
+    contents:
+      - nbs/index.ipynb
+      - section: "Basics"
+        contents:
+          - index.qmd
+          - basics-knitr.qmd
+          - basics-jupyter.qmd
+      - section: "Layout"
+        contents:
+          - layout.qmd
+          - layout-knitr.qmd
+          - layout-jupyter.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
