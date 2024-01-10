@@ -1,0 +1,36 @@
+body {
+  background-color: #fae9ca;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+nav.navbar {
+  background-color: #faac1a;
+}
+
+.sidebar.sidebar-navigation > * {
+  padding: 0;
+}
+
+#quarto-sidebar {
+  background-color: #faac1a;
+  color: black;
+  padding: 1rem;
+  margin: 0;
+}
