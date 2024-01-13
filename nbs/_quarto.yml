@@ -1,0 +1,37 @@
+project:
+  type: website
+  resources:
+    - CNAME
+
+website:
+  search: false
+  sidebar:
+    style: "docked"
+    contents:
+      - index.ipynb
+      - section: "APIs"
+        contents:
+          - 01_APIs/openai.ipynb
+      - section: "Language Models"
+        contents:
+          - section: "HuggingFace Transformers"
+            contents:
+              - 02_language_models/HF_transformers/mistral.ipynb
+          - section: "LangChain"
+            contents:
+              - 02_language_models/LangChain/langchain.ipynb
+          - section: "Retrieval Augmented Generation"
+            contents:
+              - 02_language_models/RAG/intro.ipynb
+          - section: "Guided Generation"
+            contents:
+              - 02_language_models/guided_generation/intro.ipynb
+      - section: "Post Notes"
+        contents:
+          - 99_post_notes/LLMs_to_extract_structured_data_from_text.ipynb
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
