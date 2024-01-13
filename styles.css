@@ -34,3 +34,13 @@ nav.navbar {
   padding: 1rem;
   margin: 0;
 }
+
+.cell > .sourceCode {
+  background-color: rgba(250, 220, 170, 1);
+  font-size: 0.875em;
+}
+
+.cell-output pre {
+  background-color: rgba(233, 117, 0, 0.144);
+  font-size: 0.8em;
+}
