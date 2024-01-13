@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gen-ai-notes.henrydashwood.com/nbs/02_language_models/HF_transformers/mistral.html</loc>
-    <lastmod>2024-01-13T01:43:30.587Z</lastmod>
+    <loc>https://gen-ai-notes.henrydashwood.com/02_language_models/HF_transformers/mistral.html</loc>
+    <lastmod>2024-01-13T02:36:54.693Z</lastmod>
   </url>
   <url>
-    <loc>https://gen-ai-notes.henrydashwood.com/nbs/02_language_models/LangChain/langchain.html</loc>
-    <lastmod>2024-01-13T01:43:30.876Z</lastmod>
+    <loc>https://gen-ai-notes.henrydashwood.com/02_language_models/LangChain/langchain.html</loc>
+    <lastmod>2024-01-13T02:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://gen-ai-notes.henrydashwood.com/nbs/02_language_models/guided_generation/intro.html</loc>
-    <lastmod>2024-01-13T01:43:31.074Z</lastmod>
+    <loc>https://gen-ai-notes.henrydashwood.com/02_language_models/guided_generation/intro.html</loc>
+    <lastmod>2024-01-13T02:36:55.225Z</lastmod>
   </url>
   <url>
-    <loc>https://gen-ai-notes.henrydashwood.com/nbs/02_language_models/RAG/intro.html</loc>
-    <lastmod>2024-01-13T01:43:31.281Z</lastmod>
+    <loc>https://gen-ai-notes.henrydashwood.com/02_language_models/RAG/intro.html</loc>
+    <lastmod>2024-01-13T02:36:55.434Z</lastmod>
   </url>
   <url>
-    <loc>https://gen-ai-notes.henrydashwood.com/nbs/99_post_notes/LLMs_to_extract_structured_data_from_text.html</loc>
-    <lastmod>2024-01-13T01:43:31.488Z</lastmod>
+    <loc>https://gen-ai-notes.henrydashwood.com/99_post_notes/LLMs_to_extract_structured_data_from_text.html</loc>
+    <lastmod>2024-01-13T02:36:55.647Z</lastmod>
   </url>
   <url>
-    <loc>https://gen-ai-notes.henrydashwood.com/nbs/01_APIs/openai.html</loc>
-    <lastmod>2024-01-13T01:43:31.729Z</lastmod>
+    <loc>https://gen-ai-notes.henrydashwood.com/01_APIs/openai.html</loc>
+    <lastmod>2024-01-13T02:36:55.876Z</lastmod>
   </url>
   <url>
-    <loc>https://gen-ai-notes.henrydashwood.com/nbs/index.html</loc>
-    <lastmod>2024-01-13T01:43:31.949Z</lastmod>
+    <loc>https://gen-ai-notes.henrydashwood.com/index.html</loc>
+    <lastmod>2024-01-13T02:36:56.082Z</lastmod>
   </url>
 </urlset>

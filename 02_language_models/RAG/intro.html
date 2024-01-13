@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Generative AI Notes</title>
+<title>RAG Introduction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,18 +23,18 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -50,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -59,7 +59,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><strong>Generative AI Notes</strong></h1>
+      <h1 class="quarto-secondary-nav-title">RAG Introduction</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active"><strong>Generative AI Notes</strong></a>
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><strong>Generative AI Notes</strong></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_APIs/openai.html" class="sidebar-item-text sidebar-link">OpenAI</a>
+  <a href="../../01_APIs/openai.html" class="sidebar-item-text sidebar-link">OpenAI</a>
   </div>
 </li>
       </ul>
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_language_models/HF_transformers/mistral.html" class="sidebar-item-text sidebar-link">Mistral</a>
+  <a href="../../02_language_models/HF_transformers/mistral.html" class="sidebar-item-text sidebar-link">Mistral</a>
   </div>
 </li>
       </ul>
@@ -125,22 +125,22 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_language_models/LangChain/langchain.html" class="sidebar-item-text sidebar-link">LangChain</a>
+  <a href="../../02_language_models/LangChain/langchain.html" class="sidebar-item-text sidebar-link">LangChain</a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Retrieval Augmented Generation</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Retrieval Augmented Generation</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_language_models/RAG/intro.html" class="sidebar-item-text sidebar-link">RAG Introduction</a>
+  <a href="../../02_language_models/RAG/intro.html" class="sidebar-item-text sidebar-link active">RAG Introduction</a>
   </div>
 </li>
       </ul>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_language_models/guided_generation/intro.html" class="sidebar-item-text sidebar-link">Guided Generation Introduction</a>
+  <a href="../../02_language_models/guided_generation/intro.html" class="sidebar-item-text sidebar-link">Guided Generation Introduction</a>
   </div>
 </li>
       </ul>
@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./99_post_notes/LLMs_to_extract_structured_data_from_text.html" class="sidebar-item-text sidebar-link">Using LLMs to extract structured data from text</a>
+  <a href="../../99_post_notes/LLMs_to_extract_structured_data_from_text.html" class="sidebar-item-text sidebar-link">Using LLMs to extract structured data from text</a>
   </div>
 </li>
       </ul>
@@ -186,8 +186,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#links" id="toc-links" class="nav-link active" data-scroll-target="#links">Links</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
+  <li><a href="#langchain" id="toc-langchain" class="nav-link active" data-scroll-target="#langchain">LangChain</a></li>
   </ul>
 </nav>
     </div>
@@ -196,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><strong>Generative AI Notes</strong></h1>
+<h1 class="title d-none d-lg-block">RAG Introduction</h1>
 </div>
 
 
@@ -211,26 +210,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Part of <a href="https://henrydashwood.com">henrydashwood.com</a></p>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
+<p>In a typical RAG setup:</p>
 <ul>
-<li><a href="https://github.com/fastai/lm-hackers/blob/main/lm-hackers.ipynb">A hacker’s guide to Language Models</a></li>
-<li><a href="https://medium.com/@gurpartap.sandhu3/title-using-llms-to-extract-structured-data-from-text-f3578fdc365b">Using LLMs to extract structured data from text</a></li>
-<li><a href="https://medium.com/@ravisatvik.192/unleashing-the-power-of-layoutlm-extracting-entities-from-structured-documents-made-easy-5d82c6290ec7">LayoutLM: Extracting Entities from Structured Documents, a Practical Guide</a></li>
-<li><a href="https://www.docsumo.com/blog/pdf-reading-with-gpt4">Leveraging GPT-4 for PDF Data Extraction: A Comprehensive Guide</a></li>
-<li><a href="https://swharden.com/blog/2023-07-30-ai-document-qa/">Using Llama 2 to Answer Questions About Local Documents</a></li>
+<li><p><strong>Retrieval</strong>: Given a user query or prompt, the system searches through a knowledge source (a vector store with text embeddings) to find relevant documents or text snippets. The retrieval component typically employs some form of similarity or relevance scoring to determine which portions of the knowledge source are most pertinent to the input query.</p></li>
+<li><p><strong>Generation</strong>: The retrieved documents or snippets are then provided to a large language model, which uses them as additional context for generating a more detailed, factual, and relevant response.</p></li>
 </ul>
-</section>
-<section id="tools" class="level2">
-<h2 class="anchored" data-anchor-id="tools">Tools</h2>
-<ul>
-<li><a href="https://github.com/VikParuchuri/marker?tab=readme-ov-file">Marker</a></li>
-<li><a href="https://docs.pydantic.dev/">Pydantic</a></li>
-<li><a href="https://github.com/openai/openai-python">OpenAI</a></li>
-<li><a href="https://outlines-dev.github.io/">Outlines</a></li>
-<li>Langchain</li>
-</ul>
+<p>RAG can be particularly useful when the pre-trained language model alone may not have the necessary information to generate accurate or sufficiently detailed responses since standard language models like GPT-4 are not capable of accessing real-time or post-training external information directly.</p>
+<section id="langchain" class="level2">
+<h2 class="anchored" data-anchor-id="langchain">LangChain</h2>
 
 
 </section>
